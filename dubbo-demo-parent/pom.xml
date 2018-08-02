@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.java1234</groupId>
+  <artifactId>dubbo-demo-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+ 
+  <!-- 依赖版本管理  -->
+  <properties>
+  	<dubbo-demo-api.version>0.0.1-SNAPSHOT</dubbo-demo-api.version>
+  	<dubbo.version>2.6.0</dubbo.version>
+    <zkclient.version>0.10</zkclient.version>
+    <curator-framework.version>4.0.1</curator-framework.version>
+    <fastjson.version>1.2.46</fastjson.version>
+    <log4j.version>1.2.17</log4j.version>
+    <slf4j-api.version>1.7.25</slf4j-api.version>
+    <commons-lang3.version>3.4</commons-lang3.version>
+    <netty-all.version>4.0.35.Final</netty-all.version>
+  </properties>
+ 
+  <!-- 依赖管理 仅仅定义 -->
+  <dependencyManagement>
+  	<dependencies>
+	     <dependency>
+              <groupId>com.java1234</groupId>
+              <artifactId>dubbo-demo-api</artifactId>
+              <version>${dubbo-demo-api.version}</version>
+           </dependency>
+          <dependency>
+              <groupId>com.alibaba</groupId>
+              <artifactId>dubbo</artifactId>
+              <version>${dubbo.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.101tec</groupId>
+              <artifactId>zkclient</artifactId>
+              <version>${zkclient.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>org.apache.curator</groupId>
+              <artifactId>curator-framework</artifactId>
+              <version>${curator-framework.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.alibaba</groupId>
+              <artifactId>fastjson</artifactId>
+              <version>${fastjson.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>log4j</groupId>
+              <artifactId>log4j</artifactId>
+              <version>${log4j.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>org.slf4j</groupId>
+              <artifactId>slf4j-api</artifactId>
+              <version>${slf4j-api.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>org.apache.commons</groupId>
+              <artifactId>commons-lang3</artifactId>
+              <version>${commons-lang3.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>io.netty</groupId>
+              <artifactId>netty-all</artifactId>
+              <version>${netty-all.version}</version>
+          </dependency>
+	</dependencies>
+  </dependencyManagement>
+</project>
