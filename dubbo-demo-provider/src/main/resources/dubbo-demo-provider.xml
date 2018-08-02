@@ -15,9 +15,9 @@
     <dubbo:protocol name="dubbo" port="20881"/>
     
     <!-- service实现类作为本地的一个bean -->
-    <bean id="demoProviderService" class="com.java1234.service.impl.DemoProviderServiceImpl"/>
+    <bean id="demoProviderService" class="com.java.service.impl.DemoProviderServiceImpl"/>
     
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.java1234.service.DemoProviderService" ref="demoProviderService"/>
+    <dubbo:service interface="com.java.service.DemoProviderService" ref="demoProviderService"/>
 
 </beans>

@@ -2,7 +2,7 @@ import java.io.IOException;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.java1234.service.DemoProviderService;
+import com.java.service.DemoProviderService;
 
 public class ConsumerTest {
 

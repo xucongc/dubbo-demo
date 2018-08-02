@@ -1,4 +1,4 @@
-package com.java1234.service;
+package com.java.service;
 
 /**
  * 服务提供者接口

@@ -12,6 +12,6 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
     <!-- 生成远程服务代理，可以与本地bean一样使用  check属性，启动时候是否检查 一般设置成false 启动时候不检查 -->
-    <dubbo:reference id="demoProviderService" check="false" interface="com.java1234.service.DemoProviderService"/>
+    <dubbo:reference id="demoProviderService" check="false" interface="com.java.service.DemoProviderService"/>
 
 </beans>
