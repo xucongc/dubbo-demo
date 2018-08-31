@@ -12,7 +12,7 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     
     <!-- 使用dubbo协议，在20880端口暴露服务 -->
-    <dubbo:protocol name="dubbo" port="20881"/>
+    <dubbo:protocol name="dubbo" port="20880"/>
     
     <!-- service实现类作为本地的一个bean -->
     <bean id="demoProviderService" class="com.java.service.impl.DemoProviderServiceImpl"/>
